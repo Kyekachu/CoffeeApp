@@ -12,15 +12,15 @@ fun CalculateCaffeineLevel() {
 
     var EnergyBonus: Int = 0
 
-    if (EnergyLevel == "Tired") {
+    if (EnergyLevel == "tired") {
         EnergyBonus = 5
     }
 
-    else if (EnergyLevel == "Awake") {
+    else if (EnergyLevel == "awake") {
         EnergyBonus = 0
     }
 
-    else if (EnergyLevel == "Zombie") {
+    else if (EnergyLevel == "zombie") {
         EnergyBonus = 10
     }
 
