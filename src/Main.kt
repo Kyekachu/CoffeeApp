@@ -10,25 +10,14 @@ fun CalculateCaffeineLevel() {
     print("What is your energy level?\n")
     val EnergyLevel = readln()
 
-    var EnergyBonus: Int = 0
-
-    if (EnergyLevel == "tired") {
-        EnergyBonus = 5
+    var EnergyBonus =  when (EnergyLevel) {
+        "tired" -> 5
+        "awake" -> 0
+        "zombie" -> 10
+        else -> 0
     }
 
-    else if (EnergyLevel == "awake") {
-        EnergyBonus = 0
-    }
-
-    else if (EnergyLevel == "zombie") {
-        EnergyBonus = 10
-    }
-
-    else {
-        EnergyBonus = 0
-    }
-
-    var CaffieneLevelNum: Int = BugsFound * 2 + HoursWorked + EnergyBonus;
+    var CaffieneLevelNum: Int = BugsFound * 2 + HoursWorked + EnergyBonus
 
     var CaffieneLevel: String = "none"
 
